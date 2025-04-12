@@ -1,0 +1,397 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  background-color: #fff;
+  padding: 0;
+}
+
+h1, h2 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.container {
+  font-size: 0.9em;
+  padding: 0;
+}
+
+.logo h3 {
+  margin: 2em auto;
+  font-weight: bold;
+}
+
+.background {
+  background-image: url(image-hero.png);
+}
+
+h1#heading {
+  margin: 0 auto;
+}
+
+#description {
+  width: 98%;
+  margin: 1em auto 2em auto;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.button {
+  padding: 0.8em 1.8em;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 50px;
+  border: none;
+  justify-content: space-between;
+}
+
+.solo-color {
+  background-color: #5593a2;
+}
+
+.multi-color {
+  background-color: #855fb1; 
+}
+
+span {
+  color: #32E1D6;
+}
+
+.unique {
+  color: #5593a2;
+}
+
+.section-one {
+  padding-bottom: 15em;
+}
+
+p.one {
+  margin: 10em auto 5em auto;
+}
+
+p.circle {
+  width: 1.2em;
+  padding: 1em;
+  font-weight: bold;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  
+}
+
+#heading-focus {
+  margin: 2.5em auto 1.5em auto;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  word-spacing: 0.05em;
+}
+
+#heading-two {
+  width: 80%;
+  margin: 0 auto 1em auto;
+  font-size: 2.3em;
+  line-height: 1.2em;
+}
+
+#second-description {
+  width: 90%;
+  font-size: 1.1em;
+  line-height: 1.8em;
+  margin: auto;
+  text-align: center;
+}
+
+.section-two {
+  padding: 0 0 3em 0;
+  border-top: 1px solid;
+  z-index: 1;
+  background-color: cyan;
+}
+
+p.two {
+  margin: -1.7em auto 3em auto;
+  z-index: 10;
+  color: #000;
+  background-color: #fff;
+}
+
+.third-headings {
+  width: 60%;
+  margin: auto;
+  padding: 1em 0 0.7em 0;
+  font-size: 2em;
+}
+
+.third-description {
+  width: 60%;
+  margin: auto;
+  padding-bottom: 2em;
+}
+
+/* This is an added code for both the tablet and desktop versions of the footer background image using flexbox to align them horizontally */
+div.images {
+    width: 90%;
+    margin: 0.5em auto;
+    display: flex;
+    justify-content: center;
+}
+  
+div.images img {
+    width: 20%;
+    margin: 0 0.8em;
+    border-radius: 10px;
+}
+
+
+/* stylesheet for footer background */
+footer {
+    background-position: center;
+    position: relative;
+    color: #fff;
+    z-index: 2;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgba(85, 147, 162, 0.9);
+}
+
+@media  only screen and (max-width: 480px) {
+ .background {
+    width: 100%;
+    height: 100%;
+    font-size: 0.5em;
+    padding: 12em 0;
+    margin: 0 auto 7em auto;
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-clip: border-box;
+  }
+  
+  #heading {
+    font-size: 2.5em;
+  }
+  
+  #description {
+    width: 75%;
+  }
+  
+  .button {
+    display: block;
+    margin: 0 auto 1.3em auto;
+  }
+  
+  div.images {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(2, 2fr);
+    grid-gap: 20px;
+  }
+  
+  div.images img {
+    margin: auto;
+    width: 100%;
+  }
+  
+  .section-two {
+    padding-bottom: 5.5em;
+  }
+  
+  footer {
+    background-image: url('image-footer-mobile.jpg');
+    background-size: cover;
+  }
+
+}
+
+/* media queries for tablet */
+@media  only screen and (min-width: 480px) and (max-width: 789px) {
+  .logo h3 {
+    font-size: 3em;
+  }
+  
+  .background {
+    width: 100%;
+    height: 100%;
+    padding: 12em 0;
+    margin: 0 auto 7em auto;
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-clip: border-box;
+  }
+  
+  .button {
+    margin-right: 0.8em;
+  }
+  
+  #heading {
+    font-size: 3em;
+  }
+  
+  #description {
+    width: 60%;
+  }
+  
+  .section-one {
+    padding-bottom: 10em;
+  }
+  
+  #heading-two {
+    width: 55%;
+    margin: auto;
+  }
+  
+  #second-description {
+    width: 70%;
+    margin: 1em auto 0 auto;
+  }
+  
+  /* footer background image */ 
+  footer {
+    background-image: url('image-footer-tablet.jpg');
+    background-size: cover;
+  }
+  
+  .third-headings {
+    font-size: 2em;
+    width: 40%;
+  }
+  
+  /* footer description */
+  .third-description {
+    width: 58%;
+  }
+  
+  .footer-button {
+    margin-bottom: 5em;
+}
+}
+
+/* media queries for desktop */
+@media  only screen and (min-width: 789px) and (max-width: 1440px) {
+  .logo h3 {
+    margin: 1.5em auto 0 auto;
+    padding: 0;
+    font-size: 2em;
+  }
+  
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  
+  .focal-point {
+    width: 100%;
+  }
+  
+  #left-background {
+    width: 30%;
+    padding: 10em 0 10em 10em;
+    background-image: url(/image-hero-left.png);
+    background-size: 100%;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+  
+  #right-background {
+    width: 30%;
+    margin-top: 5em;
+    padding: 10em 0 10em 10em;
+    background-image: url(/image-hero-right.png);
+    background-size: 100%;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+  
+  h1#heading {
+    font-size: 3.5em;
+    line-height: 1em;
+    margin: 1.5em auto 0.3em auto;
+  }
+  
+  #description {
+    width: 80%;
+    padding: 0;
+    margin: 1.5em auto 2.5em auto;
+  }
+  
+  .button {
+    margin-right: 0.8em;
+  }
+  
+  .section-one {
+    padding-bottom: 10em;
+  }
+  
+  #heading-two {
+    width: 35%;
+    margin: auto;
+  }
+  
+  #second-description {
+    width: 50%;
+    margin: 1em auto 0 auto;
+  }
+  
+  footer.section-two {
+    background-image: url('image-footer-desktop.jpg');
+    padding: 20em auto 20em auto;
+  }
+  
+  .unique-flex {
+    display: flex;
+    text-align: left;
+    padding: 0;
+    margin: 5em auto;
+    justify-content: space-around;
+  }
+  
+  .third-headings, .third-description {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .third-headings {
+    width: 30%;
+  }
+  
+  .third-description {
+    width: 28%;
+    float: left;
+    font-size: 1em;
+    font-weight: bold;
+    word-spacing: 0.1em;
+  }
+  
+  .button {
+    margin-right: 0.8em;
+  }
+}
